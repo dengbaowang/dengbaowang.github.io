@@ -59,7 +59,7 @@ img { border: 0; }
 	position: relative;
 	clear:left;
 	float: left;
-	margin: -1em .5em 0 0;
+	margin: -1em -0.8em 0 0;
 	padding: 0 0 0 0 ;
 	width: 200px;
 	/*height: 202px;
@@ -137,7 +137,7 @@ img { border: 0; }
 #container {
 	background-color: #fff;
 	width: 920px;
-	padding: 20px 0 5px 20px;
+	padding: 20px 10px 5px 30px;
 	text-align: left;
 	margin: 0 auto;
 }
