@@ -164,7 +164,7 @@ img { border: 0; }
 }
 
 #content h1 {
-	color: #5D5E60;
+	color: #527bbd;
 	font-size: 1.2em;
 	cursor: default;
 	display: block;
@@ -175,6 +175,9 @@ img { border: 0; }
 	border-width: 0 0 1px 0;
 	border-bottom: 1px dashed #fff;
 	font-family: Arial;
+}
+h1#split {
+	color: #5D5E60;
 }
 #content h2 {
 	color: #8D8E90;
