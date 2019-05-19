@@ -138,7 +138,7 @@ img { border: 0; }
 #container {
 	background-color: #fff;
 	width: 890px;
-	padding: 20px 20px 5px 30px;
+	padding: 20px 30px 5px 30px;
 	text-align: left;
 	margin: 0 auto;
 }
@@ -239,7 +239,7 @@ textarea {
 #footer {
 	display: block;
 	clear: left;
-	width: 780px;
+	width: 100%;
 	background-color:#FFFFFF;
 	border-color:#8D8E90;
 	border-style:solid;
