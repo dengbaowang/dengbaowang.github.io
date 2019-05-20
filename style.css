@@ -289,3 +289,7 @@ textarea {
 	border-bottom: 1px dashed #fff;
 	color: #000;
 }
+#corr p{
+	margin-left:2em;
+	font-size: 0.9em;
+}
