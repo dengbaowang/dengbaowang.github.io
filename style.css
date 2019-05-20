@@ -31,9 +31,9 @@ body {
 img { border: 0; }
 
 #header {
-	background-color: #fff;
-	height: 5.5em;
-	padding-top: 12px;
+	background-color: #ddd;
+	height: 11.2em;
+	padding-top: 1em;
 	}
 #header h1 { 	
 	margin: 0;
@@ -80,6 +80,7 @@ img { border: 0; }
 	float: left;
 	margin: -1em 2.2em 0 0;
 	padding: 0 0 0 0 ;
+	height: 109%;
 	/*width: 200px;
 	height: 202px;
 	border: .1em solid #aaa;
@@ -178,7 +179,7 @@ img { border: 0; }
 	width: 100%;
 	background-color:#FFFFFF;
 	margin-bottom:10px;
-	padding:15px 15px 0px 0px;
+	padding:15px 0px 0px 0px;
 }
 
 #content h1 {
