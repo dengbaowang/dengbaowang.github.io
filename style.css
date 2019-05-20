@@ -31,7 +31,7 @@ body {
 img { border: 0; }
 
 #header {
-	background-color: #ddd;
+	background-color: #fcfcfc;
 	height: 11.2em;
 	padding-top: 1em;
 	}
@@ -155,8 +155,8 @@ img { border: 0; }
 }
 
 #container {
-	background-color: #fff;
-	width: 890px;
+	background-color: #fcfcfc;
+	width: 61.7em;
 	padding: 20px 30px 5px 30px;
 	text-align: left;
 	margin: 0 auto;
@@ -177,7 +177,7 @@ img { border: 0; }
 	clear:left;
 	float:left;
 	width: 100%;
-	background-color:#FFFFFF;
+	background-color:#fcfcfc;
 	margin-bottom:10px;
 	padding:15px 0px 0px 0px;
 }
