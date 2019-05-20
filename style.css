@@ -37,18 +37,18 @@ img { border: 0; }
 	}
 #header h1 { 	
 	margin: 0;
-	color: #527bbd;
-	font-size: 1.8em;
+	color: #5D5E6f;
+	font-size: 1.6em;
 	font-family: Arial;
-	margin-top: -0.3em;
-	margin-bottom: 0.4em;
+	margin-top: -0.2em;
+	margin-bottom: 0.5em;
 	font-weight: normal;
 	cursor: default;
 	vertical-align:top;
 	}	
 #header h1#eng { 	
 	margin: 0;
-	color: #527bbd;
+	color: #5D5E6f;
 	font-size: 1.5em;
 	font-family: Arial;
 	margin-top: -0.3em;
