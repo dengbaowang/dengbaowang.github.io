@@ -290,9 +290,6 @@ textarea {
 	color: #000;
 }
 #corr p{
-	margin-left:0.9em;
+	margin-left:1.9em;
 	font-size: 0.9em;
-}
-#corr p i{
-	text-align : right;
 }
