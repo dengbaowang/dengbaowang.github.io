@@ -1,10 +1,10 @@
 
 a {
-    color: #eb9;
+    color: #E49760;
     text-decoration: none;
 }
 a:hover {
-    color: #f86;
+    color: #f75;
     border:0!important;
 }
 a:active {
@@ -36,7 +36,7 @@ img { border: 0; }
 	border: .2em solid #aaa;
 }
 #intro {
-	padding: 10px 30px 15px 30px;
+	padding: 1px 30px 15px 30px;
 	background-color: #0f3254;
 	/*padding-top: 1em;*/
 	width: 61.7em;
@@ -45,7 +45,6 @@ img { border: 0; }
 	border-radius: 0px 0px 5px 5px;
 }
 #header {
-<<<<<<< HEAD
 	padding: 28px 30px 5px 30px;
 	background-color: #0f3254;
 	height: 11.9em;
@@ -54,19 +53,13 @@ img { border: 0; }
 	margin: 0 auto;
 	text-align: left;
 	border-radius: 5px 5px 0px 0px;
-=======
-
-	background-color: #fcfcfc;
-	height: 11.2em;
-	padding-top: 1em;
->>>>>>> 855f322ff7a38b62ca90d45446e4407f8f8705fb
 	}
 #header h1 { 	
 	margin: 0;
-	color: #E49760;
+	/*color: #E49760;*/
 	font-size: 1.6em;
 	font-family: Arial;
-	margin-top: -0.4em;
+	margin-top: -0.6em;
 	margin-bottom: 0.3em;
 	font-weight: normal;
 	cursor: default;
@@ -104,7 +97,7 @@ img { border: 0; }
 h1#split {
 	margin-top: -0.3em;
 	color: #9D9Ea0;
-	font-size: 1.2em;
+	font-size: 1.15em;
 	font-weight:bold;
 }
 h1#split a {
@@ -128,7 +121,7 @@ hr {
 	float: left;
 	margin: -1em 2.2em 0 0;
 	padding: 0 0 0 0 ;
-	height: 109%;
+	height: 106%;
 	/*width: 200px;
 	height: 202px;
 	border: .1em solid #aaa;
@@ -210,18 +203,7 @@ hr {
 	text-decoration:underline;
 }
 
-<<<<<<< HEAD
 
-=======
-#container {
-	background-color: #fcfcfc;
-	border-radius:3px;
-	width: 61.7em;
-	padding: 20px 30px 5px 30px;
-	text-align: left;
-	margin: 0 auto;
-}
->>>>>>> 855f322ff7a38b62ca90d45446e4407f8f8705fb
 
 #rcontent {
 	display:block;
@@ -247,7 +229,7 @@ hr {
 }
 
 #content h1 {
-	color: #eb9;
+	color: #E49760;
 	font-size: 1.2em;
 	cursor: default;
 	display: block;
@@ -271,14 +253,11 @@ hr {
 	border-style: dashed;
 	border-width: 0 0 1px 0;
 	border-bottom: 0px dashed #fff;
-<<<<<<< HEAD
 
-=======
->>>>>>> 855f322ff7a38b62ca90d45446e4407f8f8705fb
 }
 
 #content a {
-	color: #eb9;
+	color: #E49760;
 	text-decoration: none;
 }
 
