@@ -18,6 +18,7 @@ date: 04/10/06
 license: you may use & modify this work.
 please keep it in www.oswd.org.
 */
+
 body {
 	font-family: "Trebuchet MS", Verdana, Tahoma, sans-serif;
 	font-size: 90%; 
@@ -63,7 +64,7 @@ img { border: 0; }
 	/*color: #E49760;*/
 	font-size: 1.6em;
 	font-family: Arial;
-	margin-top: -0.6em;
+	margin-top: -0.55em;
 	margin-bottom: 0.3em;
 	font-weight: normal;
 	cursor: default;
@@ -84,6 +85,7 @@ img { border: 0; }
 	margin: 0;
 	/*color: #E49760;*/
 	font-size: 1.1em;
+	margin-top: 0.1em;
 	padding-left: 1px;
 	cursor: default;
 	}
@@ -95,6 +97,7 @@ img { border: 0; }
 	cursor: default;
 	}	
 #header p {
+	font-size: 1em;
 	margin-top: 0.55em;
 	/*color: #3D3E40;*/
 }
@@ -146,7 +149,7 @@ hr {
 	position: relative;
 	clear:right;
 	float: right;
-	margin: -0em 5em 0 0;
+	margin: -0em 2em 0 0;
 	padding: 0 0 0 0 ;
 	/*height: 202px;
 	border: .1em solid #aaa;
