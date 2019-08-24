@@ -136,7 +136,8 @@ hr {
 	*/
 }
 #header .sidebar2 {
-	height: 100%;
+	height: 50%;
+	width: 10%;
 	/*width: 200px;
 	height: 202px;
 	border: .1em solid #aaa;
@@ -149,8 +150,8 @@ hr {
 	position: relative;
 	clear:right;
 	float: right;
-	margin: -0em 2em 0 0;
-	padding: 0 0 0 0 ;
+	margin: 1em 5em 0 0;
+	padding: 0 0 0 0;
 	/*height: 202px;
 	border: .1em solid #aaa;
 	background-color:#aaa;
