@@ -337,3 +337,7 @@ textarea {
 	border : 1px solid #ddd;
 	height : 6em;
 }
+#toumingdu {
+	/*background-color:transparent;*/
+	opacity:0;
+}
