@@ -342,16 +342,16 @@ textarea {
 	opacity:0;
 }
 #zhedang {
-	width: 30px;
-    height: 50px;
+	width: 20px;
+    height: 40px;
     background-color: pink;
     position: absolute;
     top:87px;
     left:0px;
 }
 #map {
-	width: 250pt;
-	height: 137px;
+	width: 250px;
+	height: 127px;
 	margin: 0 auto;
 	background-color: green;
 	position: relative;
