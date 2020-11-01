@@ -341,3 +341,18 @@ textarea {
 	/*background-color:transparent;*/
 	opacity:0;
 }
+#zhedang {
+	width: 30px;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    top:87px;
+    left:0px;
+}
+#map {
+	width: 250pt;
+	height: 137px;
+	margin: 0 auto;
+	background-color: green;
+	position: relative;
+}
