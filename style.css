@@ -65,7 +65,7 @@ img { border: 0; }
 }
 #introP{
 	padding: 0px 0px 0px 0px;
-	margin-top:-0.2em;
+	margin-top:-0.5em;
 	font-size: 1.07em;
 	margin-bottom: -1.3em;
 }
@@ -123,7 +123,7 @@ img { border: 0; }
 #header p {
 	font-size: 1em;
 	margin-top: 0.6em;
-	margin-bottom: 1.1em;
+	margin-bottom: 1.3em;
 	/*color: #3D3E40;*/
 }
 h1#split {
@@ -147,7 +147,7 @@ h1#split a:active {
     text-decoration: underline;
 }
 hr {
-	border: 0.5px solid #8090a0;
+	border: 0.05px solid #8090a0;
 }
 #header .sidebar {
 	position: relative;
