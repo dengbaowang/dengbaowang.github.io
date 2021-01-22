@@ -21,7 +21,7 @@ please keep it in www.oswd.org.
 */
 
 body {
-	font-family: 'Candara','vernada';
+	font-family: 'Candara','Verdana';
 	font-size: 94%; 
 	text-align: center;
 	background-color: #3D8888;
@@ -87,7 +87,7 @@ img { border: 0; }
 	margin: 0;
 	color: #444;
 	font-size: 1.6em;
-	font-family: 'Candara'.'Verdana';
+	font-family: 'Candara','Verdana';
 	margin-top: -0.55em;
 	margin-bottom: 0.3em;
 	font-weight: normal;
