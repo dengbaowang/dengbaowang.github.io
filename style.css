@@ -190,6 +190,7 @@ hr {
 	float: right;
 	margin: 1em 7em 0 0;
 	padding: 0 0 0 0;
+	color: #666666;
 }
 
 #header .quote2 {
@@ -198,6 +199,7 @@ hr {
 	float: right;
 	margin: 0.3em 4em 0 0;
 	padding: 0 0 0 0;
+	color: #666666;
 }
 #buttons {
 	margin: 0 auto;
