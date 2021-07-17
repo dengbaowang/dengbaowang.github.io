@@ -184,6 +184,21 @@ hr {
 	background-color:#aaa;
 	*/
 }
+#header .quote1 {
+	position: relative;
+	clear:right;
+	float: right;
+	margin: 1em 7em 0 0;
+	padding: 0 0 0 0;
+}
+
+#header .quote2 {
+	position: relative;
+	clear:right;
+	float: right;
+	margin: 0.3em 4em 0 0;
+	padding: 0 0 0 0;
+}
 #buttons {
 	margin: 0 auto;
 	width: 880px;
