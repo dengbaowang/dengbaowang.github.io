@@ -12,6 +12,10 @@ a:active {
     color: #527bbd;
     text-decoration: underline;
 }
+a #github {
+	height: 0.9em;
+	margin-bottom: -0.15em;
+}
 /*
 style.css: "simple icons" CSS file
 author: Nacho Llopis <lloptor@hotmail.com>
@@ -63,7 +67,7 @@ img { border: 0; }
 	border-radius: 0px 0px 1px 1px;
 	box-shadow: 0px 0px 0px 0px #111;
 }
-#introP{
+#header #introP{
 	padding: 0px 0px 0px 0px;
 	margin-top:-0.5em;
 	font-size: 1.07em;
@@ -73,7 +77,7 @@ img { border: 0; }
 	margin-top:1.2em;
 }
 #header {
-	padding: 38px 30px 13px 30px;
+	padding: 2.5em 30px 1em 30px;
 	background-color: #FDF6E4;
 	height: 11.9em;
 	/*padding-top: 1em;*/
@@ -86,7 +90,7 @@ img { border: 0; }
 #header h1 { 	
 	margin: 0;
 	color: #444;
-	font-size: 1.6em;
+	font-size: 1.5em;
 	font-family: 'Calibri','Verdana'; /*'Candara',*/
 	margin-top: -0.55em;
 	margin-bottom: 0.3em;
@@ -108,22 +112,16 @@ img { border: 0; }
 #header h2 { 	
 	margin: 0;
 	color: #393939;
-	font-size: 1.1em;
-	margin-top: 0.1em;
+	font-size: 1.05em;
+	margin-top: 0em;
 	padding-left: 1px;
 	cursor: default;
 	}
-#header h2#eng { 	
-	margin: 0;
-	color: #5D5E60;
-	font-size: 1em;
-	padding-left: 1px;
-	cursor: default;
-	}	
+
 #header p {
 	font-size: 1em;
 	margin-top: 0.6em;
-	margin-bottom: 1.3em;
+	margin-bottom: 1em;
 	/*color: #3D3E40;*/
 }
 h1#split {
