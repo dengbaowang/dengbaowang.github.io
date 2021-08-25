@@ -323,8 +323,9 @@ hr {
 	margin-left:-20px;
     padding:0;
 }
-#content ul li b#me{
-	color: #222;
+#content ul li font#me{
+	color: #4E4E4E;
+	font-weight:700;
 }
 #content ul#pub li {
 	margin-bottom: 0em;
