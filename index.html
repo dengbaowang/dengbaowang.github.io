@@ -12,24 +12,14 @@
 <!--<script src="https://kit.fontawesome.com/76d5510372.js" crossorigin="anonymous"></script>-->
 </head>
 <script>
-	function reloadAbleJSFn(id,newJS)
-	{	alert('1')
-	    var oldjs = null; 
-	    var t = null; 
-	    var oldjs = document.getElementById(id); 
-	    alert('2')
-	    if(oldjs) oldjs.parentNode.removeChild(oldjs); 
-	    alert('3')
-	    var scriptObj = document.createElement("script"); 
-	    alert('4')
-	    scriptObj.src = newJS; 
-	    scriptObj.type = "text/javascript"; 
-	    scriptObj.id = id; 
-	    alert('5')
-	    alert(scriptObj)
-	    document.getElementsByTagName('head')[0].appendChild(scriptObj);
-	    alert('6')
-	}
+	function loadItUp(url) {
+        alert('loading...');
+        var scrElement = document.getElementById('clustrmaps');
+        scrElement.innerHTML='';
+        scrElement.src=url;
+        setTimeout(loadItUp, 10000);
+    };
+
 	function changemode(){
 		/*if (x==0){
 			body=document.getElementById('body');
@@ -68,7 +58,7 @@
 				coauthors[i].style.color="#A6ACB9";
 			}
 			document.getElementById("map").style.opacity=1
-			reloadAbleJSFn("clustrmaps","//cdn.clustrmaps.com/map_v2.js?cl=27353d&w=a&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=778899&cmn=fe9200&cmo=216a9d")
+			loadItUp('//cdn.clustrmaps.com/map_v2.js?cl=27353d&w=a&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=778899&cmn=fe9200&cmo=216a9d')
 			x=2;
 		}
 		else if (x==2){
@@ -96,7 +86,7 @@
 				coauthors[i].style.color="#606060";
 			}
 			document.getElementById("map").style.opacity=1
-			reloadAbleJSFn("clustrmaps","//cdn.clustrmaps.com/map_v2.js?cl=fdf6e4&w=250&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=3d8888&ct=fdf6e4&cmo=3acc3a&cmn=ff5353")
+			loadItUp('//cdn.clustrmaps.com/map_v2.js?cl=fdf6e4&w=250&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=3d8888&ct=fdf6e4&cmo=3acc3a&cmn=ff5353')
 			x=1;
 		}
 	}
