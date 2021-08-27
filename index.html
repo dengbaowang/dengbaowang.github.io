@@ -27,8 +27,7 @@
 	    scriptObj.id = id; 
 	    alert('5')
 	    alert(scriptObj)
-	    old = document.getElementById(id);
-	    document.getElementById("map").replaceChild(scriptObj, old);
+	    document.getElementById("map").appendChild(scriptObj);
 	    alert('6')
 	}
 	function changemode(){
