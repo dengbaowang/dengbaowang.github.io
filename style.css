@@ -1,3 +1,15 @@
+#button {
+	font-family: 'Candara','Verdana'; 
+	color: #303030;
+	border: 0;
+	float:right;
+	margin-right: 8px;
+	background-color: #3D8888;
+}
+
+#button:hover {
+	cursor: pointer;
+}
 
 a {
     color: #3D8888;
@@ -323,7 +335,7 @@ hr {
 	margin-left:-20px;
     padding:0;
 }
-#content ul li font#me{
+#content ul li font.me{
 	color: #4E4E4E;
 	font-weight:700;
 }
