@@ -31,7 +31,7 @@
 			document.getElementById("button").innerHTML="Change to <b>Light</b> Mode";
 			document.getElementById("button").style.backgroundColor="#778899";
 			document.getElementById("button").style.color="#C6CCD9";
-			document.getElementById("zhedang").style.backgroundColor="#778899";
+			document.getElementById("zhedang").style.backgroundColor="#3D8888";
 
 			document.getElementById("header").style.backgroundColor="#27353D";
 			document.getElementById("content").style.backgroundColor="#27353D";
@@ -49,6 +49,7 @@
 			for (var i = 0; i < coauthors.length; i++) {
 				coauthors[i].style.color="#A6ACB9";
 			}
+			document.getElementById("map").style.opacity=0
 			x=2;
 		}
 		else if (x==2){
@@ -75,6 +76,7 @@
 			for (var i = 0; i < coauthors.length; i++) {
 				coauthors[i].style.color="#606060";
 			}
+			document.getElementById("map").style.opacity=1
 			x=1;
 		}
 	}
