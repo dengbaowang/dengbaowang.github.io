@@ -12,6 +12,18 @@
 <!--<script src="https://kit.fontawesome.com/76d5510372.js" crossorigin="anonymous"></script>-->
 </head>
 <script>
+	function reloadAbleJSFn(id,newJS)
+	{
+	    var oldjs = null; 
+	    var t = null; 
+	    var oldjs = document.getElementById(id); 
+	    if(oldjs) oldjs.parentNode.removeChild(oldjs); 
+	    var scriptObj = document.createElement("script"); 
+	    scriptObj.src = newJS; 
+	    scriptObj.type = "text/javascript"; 
+	    scriptObj.id = id; 
+	    document.getElementsByTagName("head")[0].appendChild(scriptObj);
+	}
 	function changemode(){
 		/*if (x==0){
 			body=document.getElementById('body');
@@ -50,7 +62,7 @@
 				coauthors[i].style.color="#A6ACB9";
 			}
 			document.getElementById("map").style.opacity=1
-			document.getElementById("clustrmaps").setAttribute('src', '//cdn.clustrmaps.com/map_v2.js?cl=27353d&w=a&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=778899&cmo=fe9200&cmn=216a9d')
+			reloadAbleJSFn("clustrmaps",'//cdn.clustrmaps.com/map_v2.js?cl=27353d&w=a&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=778899&cmn=fe9200&cmo=216a9d')
 			x=2;
 		}
 		else if (x==2){
@@ -78,7 +90,7 @@
 				coauthors[i].style.color="#606060";
 			}
 			document.getElementById("map").style.opacity=1
-			document.getElementById("clustrmaps").setAttribute('src', '//cdn.clustrmaps.com/map_v2.js?cl=fdf6e4&w=250&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=3d8888&ct=fdf6e4&cmo=3acc3a&cmn=ff5353')
+			reloadAbleJSFn("clustrmaps",'//cdn.clustrmaps.com/map_v2.js?cl=fdf6e4&w=250&t=n&d=kIhFNXOAD0MUwIHInQSiYvxqcYbt3mwnEPILd_ZQoDE&co=3d8888&ct=fdf6e4&cmo=3acc3a&cmn=ff5353')
 			x=1;
 		}
 	}
