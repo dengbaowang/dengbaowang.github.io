@@ -49,7 +49,7 @@
 			for (var i = 0; i < coauthors.length; i++) {
 				coauthors[i].style.color="#A6ACB9";
 			}
-			document.getElementById("map").style.opacity=0
+			document.getElementById("map").style.opacity=0;
 			x=2;
 		}
 		else if (x==2){
@@ -76,20 +76,22 @@
 			for (var i = 0; i < coauthors.length; i++) {
 				coauthors[i].style.color="#606060";
 			}
-			document.getElementById("map").style.opacity=1
+			document.getElementById("map").style.opacity=1;
 			x=1;
 		}
-		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+		if(/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 		  	document.getElementById("button").style.opacity=0;
-		}else(/webOS/i.test(navigator.userAgent)){
+		}
+		else if(/webOS/i.test(navigator.userAgent)){
 		  	document.getElementById("button").style.opacity=1;
-		  	body.style.fontSize=80%;
+		  	body.style.fontSize="80%";
 		  	document.getElementById("header").style.width="62em";
 		  	document.getElementById("content").style.width="62em";
 		}
 		else{
 		  	document.getElementById("button").style.opacity=1;
 		}
+
 	}
 	var myDate = new Date();
 	hour = myDate.getHours();
