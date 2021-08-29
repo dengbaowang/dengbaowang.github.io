@@ -390,7 +390,7 @@ textarea {
 	margin: 0 auto;
 	background-color: #1D8888;
 
-	position: absolute;
+	position: relative;
 	opacity:0;
 	top:0px;
 }
