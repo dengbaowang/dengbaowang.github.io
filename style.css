@@ -379,7 +379,7 @@ textarea {
 	margin: 0 auto;
 	background-color: #6D8888;
 
-	position: absolute;
+	position: relative;
 	opacity:1;
 	top:0px;
 }
