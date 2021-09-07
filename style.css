@@ -38,7 +38,7 @@ body {
 	font-family: 'Calibri','Verdana'; /*'Candara',*/
 	font-size: 90%; 
 	text-align: center;
-	background-color: #596569;
+	background-color: #697579;
 	padding-top: 8px;
 	color: #000;
 }
@@ -53,7 +53,7 @@ img { border: 0; }
 }*/
 #footer {
 	padding: 3px 0px 0px 0px;
-	background-color: #596569;
+	background-color: #697579;
 	color: #C6CCD9;
 	/*padding-top: 1em;*/
 	text-align: right;
@@ -132,7 +132,7 @@ h1#split {
 	font-weight:bold;
 }
 h1#split a {
-    color: #596569;
+    color: #697579;
     text-decoration: none;
     font-weight: bold;
 }
@@ -142,7 +142,7 @@ h1#split a:hover {
     font-weight: bold;
 }
 h1#split a:active {
-    color: #596569;
+    color: #697579;
     text-decoration: underline;
 }
 hr {
@@ -300,7 +300,7 @@ hr {
 }
 
 #content a {
-	color: #596569;
+	color: #697579;
 	text-decoration: none;
 }
 
@@ -356,7 +356,7 @@ textarea {
 #zhedang {
 	width: 30px;
     height: 50px;
-    background-color: #596569;
+    background-color: #697579;
     position: absolute;
     top:70px;
     left:0px;
