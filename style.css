@@ -10,7 +10,7 @@
 }
 
 a {
-    color: #4D9898;
+    color: #3D8888;
     text-decoration: none;
     font-weight: normal;
 }
@@ -26,67 +26,17 @@ a #google-scholar {
 	height: 1.05em;
 	margin-bottom: -0.22em;
 }
-/*
-style.css: "simple icons" CSS file
-author: Nacho Llopis <lloptor@hotmail.com>
-date: 04/10/06
-license: you may use & modify this work.
-please keep it in www.oswd.org.
-*/
 
 body {
 	font-family: 'Calibri','Verdana'; /*'Candara',*/
 	font-size: 90%; 
 	text-align: center;
-	background-color: #697579;
+	background-color: #50585F;
 	padding-top: 8px;
 	color: #000;
 }
-img { border: 0; }
-/*#container {
-	background-color: #0f3254;
-	border-radius:3px;
-	width: 58em;
-	text-align: left;
-	margin: 0 auto;
-	border: .2em solid #aaa;
-}*/
-#footer {
-	padding: 3px 0px 0px 0px;
-	background-color: #697579;
-	color: #C6CCD9;
-	/*padding-top: 1em;*/
-	text-align: right;
-	width: 58em;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 0px 0px 1px 1px;
-	box-shadow: 0px 0px 0px 0px #111;
-}
-#footer a{
-	color: #333;
-}
-#intro {
-	margin-top:-2px;
-	padding: 10px 30px 18px 30px;
-	background-color: #FDF6E4;
-	/*padding-top: 1em;*/
-	width: 58em;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-radius: 0px 0px 1px 1px;
-	box-shadow: 0px 0px 0px 0px #111;
-}
-#header #introP{
-	padding: 0px 0px 0px 0px;
-	margin-top:-0.1em;
-	font-size: 1.0em;
-	margin-bottom: -1.3em;
-}
-#hr {
-	margin-top:1.2em;
-}
+
+
 #header {
 	padding: 2.5em 30px 1em 30px;
 	background-color: #FDF6E4;
@@ -125,29 +75,8 @@ img { border: 0; }
 	margin-bottom: 0.8em;
 	/*color: #3D3E40;*/
 }
-h1#split {
-	margin-top: -0.4em;
-	color: #9D9Ea0;
-	font-size: 1.2em;
-	font-weight:bold;
-}
-h1#split a {
-    color: #697579;
-    text-decoration: none;
-    font-weight: bold;
-}
-h1#split a:hover {
-    color: #1D4848;
-    border:0!important;
-    font-weight: bold;
-}
-h1#split a:active {
-    color: #697579;
-    text-decoration: underline;
-}
-hr {
-	border: 0.05px solid #8090a0;
-}
+
+
 #header .sidebar {
 	position: relative;
 	clear:left;
@@ -155,11 +84,6 @@ hr {
 	margin: -1em 2.2em 0 0;
 	padding: 0 0 0 0 ;
 	height: 106%;
-	/*width: 200px;
-	height: 202px;
-	border: .1em solid #aaa;
-	background-color:#aaa;
-	*/
 }	
 	
 #header .sidebar2 {
@@ -168,7 +92,7 @@ hr {
 	position: relative;
 	clear:right;
 	float: right;
-	margin: 0em 4.5em 0 0;
+	margin: 0em 4em 0 0;
 	padding: 0 0 0 0;
 	/*height: 202px;
 	border: .1em solid #aaa;
@@ -192,87 +116,23 @@ hr {
 	padding: 0 0 0 0;
 	color: #666666;
 }
-#buttons {
-	margin: 0 auto;
-	width: 880px;
-	}
-#buttons div {
-	width: 100px;
-	float: right;
-	height: 80px;
-	text-align: center;
-	margin:1px;
-	}
-	
-#buttons #s1 {
-	no-repeat 50% 0%;
-	border-right:1px dashed #ccc;
-	}
-#buttons #s2 {
-	no-repeat 50% 0%;
-	border-right:1px dashed #ccc;
-	}
-#buttons #s3 {
-	no-repeat 50% 0%;
-	border-right:1px dashed #ccc;
-	}
-#buttons #s4 {
-	no-repeat 50% 0%;
-	border-right:1px dashed #ccc;
-	}
-#buttons #s5 {
-	no-repeat 50% 0%;
-	border-right:1px dashed #ccc;
-	}
-#buttons #s6 {
-	no-repeat 50% 0%;
-	}
 
-#buttons div a{
-	color: #8D8E90;
-	font-size: 1.2em;
-	display: block;
-	padding: 50px 0px 0px 0px;
-	text-decoration:none;
-	}
-
-#buttons div a:hover{
-	color: #8D8Eff;
-	text-decoration: none;
-	}
-
-#buttons .selected{
-	text-decoration:underline;
-}
-
-
-
-#rcontent {
-	display:block;
-	text-align: right;
-	clear:left;
-	float:left;
-	width: 780px;
-	background-color:#FFFFFF;
-	padding:15px  0px 0px 0px;
-}
 
 #content {
-	display:block;
-	clear:left;
 	width: 58em;
 	background-color:#FDF6E4;
 	margin-top:10px;
 	padding:10px 30px 5px 30px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10px;
 	text-align: left;
 	border-radius: 1px 1px 1px 1px;
 	box-shadow: 0px 0px 0px 0px #111;
 }
 
 #content h1 {
-	color: #4D9898;
+	color: #3D8888;
 	font-size: 1.2em;
 	cursor: default;
 	display: block;
@@ -299,27 +159,9 @@ hr {
 
 }
 
-#content a {
-	color: #697579;
-	text-decoration: none;
-}
 
-#content a:hover {
-	color: #1D4848;
-}
 #content p {
 	margin: 0.5em 0 0.5em 0;
-}
-#content .sidebar {
-	position: relative;
-	clear:right;
-	float: right;
-	margin: .5em 0 0 .5em;
-	padding: 0 .7em .7em .7em;
-	width: 200px;
-	font-size: .9em;
-	border: 0px solid #ddd;
-	background-color:#FFFFFF;
 }
 
 #content ul li{
@@ -336,47 +178,4 @@ hr {
 }
 #content ul#pub li {
 	margin-bottom: 0em;
-}
-button {
-	background : #ffffff;
-	border : 1px solid #ddd;
-
-}
-input {
-	border : 1px solid #ddd;
-	margin : 2px 0px 2px 0px;
-	padding : 4px 4px 4px 0px;
-	font-family: "Candara",'Calibri', Verdana;
-}
-textarea {
-	border : 1px solid #ddd;
-	height : 6em;
-}
-
-#zhedang {
-	width: 30px;
-    height: 50px;
-    background-color: #697579;
-    position: absolute;
-    top:70px;
-    left:0px;
-}
-#map {
-	width: 250px;
-	height: 120px;
-	margin: 0 auto;
-	position: relative;
-}
-
-
-#clustrmaps1{
-	position: absolute;
-	opacity:1;
-	width: 100%;
-}
-
-#clustrmaps2{
-	position: absolute;
-	opacity:0;
-	width: 100%;
 }
