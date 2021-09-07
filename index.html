@@ -18,7 +18,7 @@
 			body.style.backgroundColor='#303841';
 			document.getElementById("button").innerHTML="Normal mode";
 			document.getElementById("button").style.backgroundColor="#303841";
-			document.getElementById("button").style.color="#3D8888";
+			document.getElementById("button").style.color="#3D7388";
 			document.getElementById("zhedang").style.backgroundColor="#303841";
 
 			document.getElementById("header").style.backgroundColor="#FDF6E4";
@@ -27,12 +27,12 @@
 		}*/
 		if (x==1){
 			body=document.getElementById('body');
-			body.style.backgroundColor='#778899';
+			body.style.backgroundColor='#3D7388';//778899
 			document.getElementById("button").innerHTML="Change to <b>Light</b> Mode";
 			document.getElementById("button").style.backgroundColor="rgba(0, 0, 0, 0)";
 			document.getElementById("button").style.color="#C6CCD9";
 			document.getElementById("footer").style.color="#C6CCD9";
-			document.getElementById("zhedang").style.backgroundColor="#778899";
+			document.getElementById("zhedang").style.backgroundColor="#3D7388";
 
 			document.getElementById("header").style.backgroundColor="#27353D";
 			document.getElementById("content").style.backgroundColor="#27353D";
@@ -52,17 +52,27 @@
 			}
 			document.getElementById("clustrmaps1").style.opacity=0;
 			//document.getElementById("clustrmaps2").style.opacity=1;
-			document.getElementById("footer").style.backgroundColor="#778899";
+			document.getElementById("footer").style.backgroundColor="#3D7388";
+
+			var links = document.getElementsByTagName('a');
+			for (var i = 0; i < links.length; i++) {
+			    links[i].onmouseover = function() {
+			        this.style.color="#6DB8B8"
+			    };
+			    links[i].onmouseout = function() {
+			        this.style.color="#4D9898"
+			    };
+			}
 			x=2;
 		}
 		else if (x==2){
 			body=document.getElementById('body');
-			body.style.backgroundColor='#3D8888';
+			body.style.backgroundColor='#3D7388';
 			document.getElementById("button").innerHTML="Change to <b>Dark</b> Mode";
 			document.getElementById("button").style.backgroundColor="#rgba(0, 0, 0, 0)";
 			document.getElementById("button").style.color="#303030";
 			document.getElementById("footer").style.color="#303030";
-			document.getElementById("zhedang").style.backgroundColor="#3D8888";
+			document.getElementById("zhedang").style.backgroundColor="#3D7388";
 
 			document.getElementById("header").style.backgroundColor="#FDF6E4";
 			document.getElementById("content").style.backgroundColor="#FDF6E4";
@@ -82,7 +92,16 @@
 			}
 			document.getElementById("clustrmaps1").style.opacity=1;
 			//document.getElementById("clustrmaps2").style.opacity=0;
-			document.getElementById("footer").style.backgroundColor="#3D8888";
+			document.getElementById("footer").style.backgroundColor="#3D7388";
+			var links = document.getElementsByTagName('a');
+			for (var i = 0; i < links.length; i++) {
+			    links[i].onmouseover = function() {
+			        this.style.color="#205555"
+			    };
+			    links[i].onmouseout = function() {
+			        this.style.color="#4D9898"
+			    };
+			}
 			x=1;
 		}
 		
@@ -101,15 +120,16 @@
 		}
 		
 	}
-	var myDate = new Date();
+	/*var myDate = new Date();
 	hour = myDate.getHours();
-	if (hour>=8 & hour<=18){
+	if (hour>=8 & hour<=14){
 		var x=2;
 	}
 	else {
 		var x=1;
 	}
-	window.onload=changemode;
+	window.onload=changemode;*/
+	var x=1;
 </script>
 <body id='body'><a name="top"></a>
 	<!--<div id="container">-->
@@ -185,28 +205,28 @@
 	  			<ul id="pub">
 	  				<li>Learning from Complementary Labels via Partial-Output Consistency Regularization. <a href="https://github.com/dengbaowang/CLL_POCR" target="_blank"><img id="github" src="iconmonstr-github-1.svg"></img></a><br>
 	  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, L. Feng, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 30th International Joint Conference on Artificial Intelligence (<font color="#3D8888">IJCAI</font>), 2021.</font><!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/ijcai21.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<font class="conf" color="#000000">In: Proceedings of the 30th International Joint Conference on Artificial Intelligence (<font color="#4D9898">IJCAI</font>), 2021.</font><!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/ijcai21.pdf" target="_blank"><b>Paper</b></a>]--></li>
 	  				<br>
 					<li>Learning from Noisy Labels with Complementary Loss Functions. <a href="https://github.com/dengbaowang/CompLossForNoisyLabels" target="_blank"><img id="github" src="iconmonstr-github-1.svg"></img></a><br>
 	  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, Y. Wen, L. Pan, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 35th AAAI Conference on Artificial Intelligence (<font color="#3D8888">AAAI</font>), 2021.</font> <!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
-	  				<br>
-					<li>Multi-View Multi-Label Learning with View-Specific Information Extraction. <br>
-	  				<font class="coauthors" color="#606060">X. Wu, Q.-G. Chen, Y. Hu,</font> <font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, X. Chang, X. Wang, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 28th International Joint Conference on Artificial Intelligence (<font color="#3D8888">IJCAI</font>), 2019.</font> <!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<font class="conf" color="#000000">In: Proceedings of the 35th AAAI Conference on Artificial Intelligence (<font color="#4D9898">AAAI</font>), 2021.</font> <!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
 	  				<br>
 	  				<li>Adaptive Graph Guided Disambiguation for Partial Label Learning. <a href="https://github.com/dengbaowang/PL-AGGD" target="_blank"><img id="github" src="iconmonstr-github-1.svg"></img></a><br>
 	  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, L. Li, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<font color="#3D8888">KDD</font>), 2019.</font> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<font class="conf" color="#000000">In: Proceedings of the 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<font color="#4D9898">KDD</font>), 2019.</font> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<br>
+					<li>Multi-View Multi-Label Learning with View-Specific Information Extraction. <br>
+	  				<font class="coauthors" color="#606060">X. Wu, Q.-G. Chen, Y. Hu,</font> <font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, X. Chang, X. Wang, M.-L. Zhang.</font><br>
+	  				<font class="conf" color="#000000">In: Proceedings of the 28th International Joint Conference on Artificial Intelligence (<font color="#4D9898">IJCAI</font>), 2019.</font> <!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
 				</ul>
 			
 			<h1><a name="honors"></a>Honors</a></h1>
 				<ul>
-					<li><p> National Scholarship for New PhD Students &nbsp;&nbsp;2019 </p></li>
-	            	<li><p> Outstanding Graduate Award of Southwest University &nbsp;&nbsp;2019 </p></li>
-	                <li><p> National Scholarship &nbsp;&nbsp;2018 </p></li>
-	                <!--<li><p> Merit Student Award of Southwest University &nbsp;&nbsp;2018 </p></li>-->
-	                <li><p> First Class Academic  Scholarship of Southwest University &nbsp;&nbsp;2016, 2017, 2018 </p></li>
+					<li><p> China National Scholarship for the First-Year PhD Students &nbsp;&nbsp;2019 </p></li>
+	            	<li><p> Outstanding Graduates, Southwest University &nbsp;&nbsp;2019 </p></li>
+	                <li><p> China National Scholarship &nbsp;&nbsp;2018 </p></li>
+	                <li><p> Merit Student Award, Southwest University &nbsp;&nbsp;2018 </p></li>
+	                <li><p> First Class Academic  Scholarship, Southwest University &nbsp;&nbsp;2016, 2017, 2018 </p></li>
 	            </ul><!--
 	        <h1><a name="courses"></a>Courses</a></h1>
 				<ul>
@@ -220,8 +240,8 @@
             </div>-->
             <h1><a name="services"></a>Academic Services</a></h1>
 				<ul>
-					<li><p>PC Member for AAAI2021, ACML2021</p></li>
-					<li><p>Journal Reviewer for IEEE Transactions on Multimedia</p></li>
+					<li><p>PC Member for AAAI (2021, 2022), ACML (2021)</p></li>
+					<li><p>Journal Reviewer for IEEE Transactions on Multimedia, Neurocomputing</p></li>
 	            </ul>
 		</div>
 		<div id="footer">
