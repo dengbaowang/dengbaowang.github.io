@@ -1,21 +1,44 @@
-#button {
-	font-family: 'Candara','Verdana'; 
-	color: #C6CCD9;
-	border: 0;
-	background-color: rgba(0, 0, 0, 0) ;
+#button1 {
+	border: .1em solid #8C1515; /*#8C1515 #005AAD*/
+	color: #8C1515;
+	border-radius: 2px 2px 2px 2px; 
+	font-size: 0.83em; 
+	box-shadow: 0px 0px 4px 0px #bbb;
+	font-weight:700;
 }
-
-#button:hover {
+#button1:hover {
+	color: #5C1515;
 	cursor: pointer;
 }
 
+#button {
+	background-color: #8C1515;
+	border-radius: 2px 2px 2px 2px; 
+	box-shadow: 0px 0px 4px 0px #999;
+	font-size: 0.94em; 
+}
+
+#buttons {
+	margin-top: 3px;
+	margin-bottom: -20px;
+}
+
 a {
-    color: #3D8888;
+    color: #8C1515;
     text-decoration: none;
-    font-weight: normal;
+    font-weight:normal;
+}
+#content a {
+    color: #8C1515;
+    text-decoration: none;
+    font-weight:700;
 }
 a:hover {
-    color: #205555;
+    color: #4C1515;
+    border:0!important;
+}
+#content a:hover {
+    color: #5C1515;
     border:0!important;
 }
 a #github {
@@ -29,7 +52,7 @@ a #google-scholar {
 
 body {
 	font-family: 'Calibri','Verdana'; /*'Candara',*/
-	font-size: 90%; 
+	font-size: 91%; 
 	text-align: center;
 	background-color: #50585F;
 	padding-top: 8px;
@@ -46,7 +69,7 @@ body {
 	margin: 0 auto;
 	text-align: left;
 	border-radius: 1px 1px 1px 1px;
-	box-shadow: 0px 0px 0px 0px #111;
+	box-shadow: 0px 0px 1px 0px #222;
 	}
 #header h1 { 	
 	margin: 0;
@@ -126,13 +149,14 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
+	margin-bottom: 20px;
 	text-align: left;
 	border-radius: 1px 1px 1px 1px;
-	box-shadow: 0px 0px 0px 0px #111;
+	box-shadow: 0px 0px 1px 0px #222;
 }
 
 #content h1 {
-	color: #3D8888;
+	color: #444;
 	font-size: 1.2em;
 	cursor: default;
 	display: block;
@@ -172,10 +196,12 @@ body {
 	margin-left:-20px;
     padding:0;
 }
+
 #content ul li font.me{
 	color: #4E4E4E;
 	font-weight:700;
 }
+
 #content ul#pub li {
 	margin-bottom: 0em;
 }
