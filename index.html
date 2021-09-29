@@ -7,9 +7,40 @@
 <meta name="description" content="Deng-Bao Wang(王登豹)&#39;s homepage.">
 <title>Deng-Bao Wang</title>
 <link rel="stylesheet" href="./style.css" type="text/css">
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          showProcessingMessages: false,
+          TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+        </script>
+        <script src="https://&nbsp;code&nbsp;.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+          function toggle(pId) {
+            var e=document.getElementById(pId);
+            if (!e) return;
+            if (e.style.display == "none") {
+              e.style.display = "block"
+            } else {
+              e.style.display = "none"
+            }
+            return;
+          }
+        </script>
 </head>
-
-<body id='body'><a name="top"></a>
+<script>
+	function changemode(){
+		if(/OS/i.test(navigator.userAgent)){
+	  	body.style.fontSize="80%";
+	  	document.getElementById("header").style.width="62em";
+	  	document.getElementById("content").style.width="62em";
+	  	document.getElementById("footer").style.width="62em";
+		}
+		else{
+		}
+	}
+	window.onload=changemode;
+</script>
+<body id='body'><a target="_blank" name="top"></a>
 	<!--<div id="container">-->
 		<div id="header">
 			<div id="sidebar1" class="sidebar">
@@ -20,59 +51,179 @@
     			<img class="logo" height="90%" src="./SEU_logo_small.png">
 		    </div>
 
-			<h1 id="headerh1"><b>Deng-Bao WANG</b> <!--<span style="vertical-align:text-bottom"><img src="./name.png"></span>--></h1>
-			<h2 id="headerh2">Ph.D. Student<!--, <a href="http://palm.seu.edu.cn/" target="_blank">PALM Group</a></h2>-->
-	        <h2><a href="https://cse.seu.edu.cn/">School of Computer Science and Engineering</a></h2>
-	        <h2><a href="http://www.seu.edu.cn/"/>Southeast University</a></h2>
+			<h1 id="headerh1"><b>Deng-Bao WANG &nbsp;<font style="font-family: kaiti;">王登豹</font></b> <!--<span style="vertical-align:text-bottom"><img src="./name.png"></span>--></h1>
+			<h2 id="headerh2">Ph.D. Student<!--, <a target="_blank" href="http://palm.seu.edu.cn/" target="_blank">PALM Group</a></h2>-->
+	        <h2><a target="_blank" href="https://cse.seu.edu.cn/">School of Computer Science and Engineering</a></h2>
+	        <h2><a target="_blank" href="http://www.seu.edu.cn/"/>Southeast University, China</a></h2>
 	        <p><!--&#127970;-->Computer Building, Jiulonghu Campus of Southeast University, Nanjing, China<br>  		
 			<!--&#128232;-->Email: wangdb[at]seu.edu.cn &nbsp;OR&nbsp; wangdb.seu[at]gmail.com
-			<!--<br>URL: <a href="https://dengbaowang.github.io"> https://dengbaowang.github.io</a>-->
+			<!--<br>URL: <a target="_blank" href="https://dengbaowang.github.io"> https://dengbaowang.github.io</a>-->
 			</p>
 			<p id="introP">
-			I am now a second-year Ph.D. student (supervised by Prof. <a href="http://palm.seu.edu.cn/zhangml/"> Min-Ling Zhang</a>) of School of Computer Science and Engineering in Southeast University and a member of <a href="http://palm.seu.edu.cn/" target="_blank">PALM group</a>. <!--I received B.Sc. degree from School of Computer and Control Engineering at <a href="http://www.ytu.edu.cn/">Yantai University</a> in 2016 and M.Sc. degree from College of Computer and Information Science at <a href="http://www.swu.edu.cn/"/>Southwest University</a> in 2019.-->
+			I am now a third year Ph.D. student (supervised by Prof. <a target="_blank" href="http://palm.seu.edu.cn/zhangml/"> Min-Ling Zhang</a>) of School of Computer Science and Engineering in Southeast University and a member of <a target="_blank" href="http://palm.seu.edu.cn/" target="_blank">PALM group</a>. <!--I received B.Sc. degree from School of Computer and Control Engineering at <a target="_blank" href="http://www.ytu.edu.cn/">Yantai University</a> in 2016 and M.Sc. degree from College of Computer and Information Science at <a target="_blank" href="http://www.swu.edu.cn/"/>Southwest University</a> in 2019.-->
 			</p>
 		</div>
 
 		<div id="content">
-			<h1><a name="interest"></a>Research Interests</h1>
+			<h1><a target="_blank" name="interest"></a>Research Interests</h1>
 	            <ul>
 	                <li><p>Weakly Supervised Learning</p></li>
-	                <li><p>Phenomenology of Deep Neural Networks</p></li>
-	                <li><p>Uncertainty Quantification for Classification and Regression Tasks</p></li>
+	                <li><p>Deep Learning Phenomenology</p></li>
+	                <li><p>Uncertainty Quantification in Classification and Regression</p></li>
 	                <!--<li><p>Applications of AI on Computer Vision and Natural Language Processing</p></li>-->
 	            </ul>
 
-			<h1><a name="publications"></a>Publications</h1>
+			<h1><a target="_blank" name="publications"></a>Publications</h1>
 	  			<ul id="pub">
-	  				<li>Learning from Complementary Labels via Partial-Output Consistency Regularization. <a href="https://github.com/dengbaowang/CLL_POCR" target="_blank"><img id="github" src="iconmonstr-github-1.svg"></img></a><br>
-	  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, L. Feng, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 30th International Joint Conference on Artificial Intelligence (<font color="#3D8888">IJCAI</font>), 2021.</font><!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/ijcai21.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<li>
+	  					Rethinking Calibration of Deep Neural Networks: Don't Be Afraid of Overconfidence.<br>
+		  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, L. Feng, M.-L. Zhang.</font><br>
+		  				<font class="conf" color="#000000">In: Proceedings of the 35th Conference on Neural Information Processing Systems, Virtual Event.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<div id="buttons">
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;NeurIPS 2021&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle('nips21_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://openreview.net/forum?id=NJS8kp15zzH">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle('nips21_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							</div>
+							<br>
+							<span id="nips21_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							Capturing accurate uncertainty quantification of the prediction from deep neural networks is important in many real-world decision-making applications. A reliable predictor is expected to be accurate when it is confident about its predictions and indicate high uncertainty when it is likely to be inaccurate. However, modern neural networks have been found to be poorly calibrated, primarily in the direction of overconfidence. In recent years, there is a surge of research on model calibration by leveraging implicit or explicit regularization techniques during training, which obtain well calibration by avoiding overconfident outputs.<br><br>
+	 						In our study, we empirically found that despite the predictions obtained from these regularized models are better calibrated, they are worse <b>calibratable</b>, namely, it is harder to further calibrate their predictions with post-hoc calibration methods like temperature scaling and histogram binning. We conduct a series of empirical studies showing that overconfidence may not hurt final calibration performance if post-hoc calibration is allowed, rather, the penalty of confident outputs will compress the room of potential improvements in post-hoc calibration phase. Our experimental findings point out a new direction to improve calibration of DNNs by considering main training and post-hoc calibration as a unified framework. 
+							</span>
+							<span id="nips21_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+								@inproceedings{neurips21dbwang,<br>
+							  author    = {Deng-Bao Wang and  Lei Feng and Min-Ling Zhang},<br>
+							  title     = {Rethinking Calibration of Deep Neural Networks: Do Not Be Afraid of Overconfidence},<br>
+							  booktitle = {Proceedings of the 35th Conference on Neural Information Processing Systems, Virtual Event},<br>
+							  year      = {2021}<br>
+							}
+							</span>
+		  				
+	  				</li>
 	  				<br>
-					<li>Learning from Noisy Labels with Complementary Loss Functions. <a href="https://github.com/dengbaowang/CompLossForNoisyLabels" target="_blank"><img id="github" src="iconmonstr-github-1.svg"></img></a><br>
+	  				<li>
+	  					Learning from Complementary Labels via Partial-Output Consistency Regularization. <!--<a target="_blank" href="https://github.com/dengbaowang/CLL_POCR" target="_blank"><img id="github" src="iconmonstr-github-1.svg"></img></a>--><br>
+		  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, L. Feng, M.-L. Zhang.</font><br>
+		  				<font class="conf" color="#000000">In: Proceedings of the 30th International Joint Conference on Artificial Intelligence, Virtual Event.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<div id="buttons">
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;IJCAI 2021&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle('ijcai21_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/IJCAI'21a.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/CLL_POCR">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle('ijcai21_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							</div>
+							<br>
+							<span id="ijcai21_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+								In complementary-label learning (CLL), a multiclass classifier is learned from training instances each associated with complementary labels, which specify the classes that the instance does not belong to. Previous studies focus on unbiased risk estimator or surrogate loss while neglect the importance of regularization in training phase. In this &nbsp;paper&nbsp;, we give the first attempt to leverage regularization techniques for CLL. By decoupling a label vector into complementary labels and partial unknown labels, we simultaneously inhibit the outputs of complementary labels with a complementary loss and penalize the sensitivity of the classifier on the partial outputs of these unknown classes by consistency regularization. Then we unify the complementary loss and consistency loss together by a specially designed dynamic weighting factor. We conduct a series of experiments showing that the proposed method achieves highly competitive performance in CLL.
+							</span>
+							<span id="ijcai21_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							@inproceedings{ijcai21dbwang,<br>
+							  author    = {Deng-Bao Wang and  Lei Feng and Min-Ling Zhang},<br>
+							  title     = {Learning from Complementary Labels via Partial-Output Consistency Regularization},<br>
+							  booktitle = {Proceedings of the 30th International Joint Conference on Artificial Intelligence, Virtual Event},<br>
+							  pages     = {3075--3081},<br>
+							  year      = {2021}<br>
+							}
+							</span>
+		  			</li>
+	  				<br>
+					<li>Learning from Noisy Labels with Complementary Loss Functions.<br>
 	  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, Y. Wen, L. Pan, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 35th AAAI Conference on Artificial Intelligence (<font color="#3D8888">AAAI</font>), 2021.</font> <!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<font class="conf" color="#000000">In: Proceedings of the 35th AAAI Conference on Artificial Intelligence, Virtual Event.</font> <!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/kdd19.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+	  				<div id="buttons">
+	  				<font color="#FDF6E4" id="button"><b>&nbsp;AAAI 2021&nbsp;</b></font>&nbsp;
+	  				<span class="title" onclick="toggle('aaai21_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/AAAI'21a.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/CompLossSupplement.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/CompLossForNoisyLabels">&nbsp;Code&nbsp;</a></font>&nbsp;
+						<span class="title" onclick="toggle('aaai21_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+						</div>
+						<br>
+						<span id="aaai21_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							Recent researches reveal that deep neural networks are sensitive to label noises hence leading to poor generalization performance in some tasks. Although different robust loss functions have been proposed to remedy this issue, they suffer from an underfitting problem, thus are not sufficient to learn accurate models. On the other hand, the commonly used Cross Entropy (CE) loss, which shows high performance in standard supervised learning (with clean supervision), is nonrobust to label noise. In this &nbsp;paper&nbsp;, we propose a general framework to learn robust deep neural networks with complementary loss functions. In our framework, CE and robust loss play complementary roles in a joint learning objective as per their learning sufficiency and robustness properties respectively. Specifically, we find that by exploiting the memorization effect of neural networks, we can easily filter out a proportion of hard samples and generate reliable pseudo labels for easy samples, and thus reduce the label noise to a quite low level. Then, we simply learn with CE on pseudo supervision and robust loss on original noisy supervision. In this procedure, CE can guarantee the sufficiency of optimization while the robust loss can be regarded as the supplement. Experimental results on benchmark classification datasets indicate that the proposed method helps achieve robust and sufficient deep neural network training simultaneously.
+						</span>
+						<span id="aaai21_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+						@inproceedings{aaai21dbwang,<br>
+						  author    = {Deng-Bao Wang and  Yong Wen and Lujia Pan and and Min-Ling Zhang},<br>
+						  title     = {Learning from Noisy Labels with Complementary Loss Functions},<br>
+						  booktitle = {Proceedings of the 35th AAAI Conference on Artificial Intelligence, Virtual Event},<br>
+						  pages     = {10111--10119},<br>
+						  year      = {2021}<br>
+						}
+					</span>
+
+	  				</li>
 	  				<br>
-	  				<li>Adaptive Graph Guided Disambiguation for Partial Label Learning. <a href="https://github.com/dengbaowang/PL-AGGD" target="_blank"><img id="github" src="iconmonstr-github-1.svg"></img></a><br>
+
+	  				<li>Adaptive Graph Guided Disambiguation for Partial Label Learning.<br>
 	  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, L. Li, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<font color="#3D8888">KDD</font>), 2019.</font> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<font class="conf" color="#000000">In: Proceedings of the 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Anchorage, AK, USA.</font> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/kdd19.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+	  				<div id="buttons">
+	  				<font color="#FDF6E4" id="button"><b>&nbsp;KDD 2019&nbsp;</b></font>&nbsp;
+	  				<span class="title" onclick="toggle('kdd19_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/KDD'19b.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/PL-AGGD">&nbsp;Code&nbsp;</a></font>&nbsp;
+						<span class="title" onclick="toggle('kdd19_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+						</div>
+						<br>
+						<span id="kdd19_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+						Partial label learning aims to induce a multi-class classifer from training examples where each of them is associated with a set of candidate labels, among which only one is the ground-truth label. The common strategy to train predictive model is disambiguation, i.e. differentiating the modeling outputs of individual candidate labels so as to recover ground-truth labeling information. Recently, feature-aware disambiguation was proposed to generate different labeling confdences over candidate label set by utilizing the graph structure of feature space. However, the existence of noise and outliers in training data makes the similarity derived from original features less reliable. To this end, we proposed a novel approach for partial label learning based on adaptive graph guided disambiguation (PL-AGGD). Compared with fxed graph, adaptive graph could be more robust and accurate to reveal the intrinsic manifold structure within the data. Moreover, instead of the two-stage strategy in previous algorithms, our approach performs label disambiguation and predictive model training simultaneously. Specifically, we present a unifed framework which jointly optimizes the ground-truth labeling confdences, similarity graph and model parameters to achieve strong generalization performance. Extensive experiments show that PL-AGGD performs favorably against stateof-the-art partial label learning approaches.
+						</span>
+						<span id="kdd19_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							@inproceedings{kdd19dbwang,<br>
+						  author    = {Deng-Bao Wang and Li Li and Min-Ling Zhang},<br>
+						  title     = {Adaptive Graph Guided Disambiguation for Partial Label Learning},<br>
+						  booktitle = {Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Anchorage, AK, USA},<br>
+						  pages     = {83--91},<br>
+						  year      = {2019}<br>
+						}
+					</span>
+					</li>
 	  				<br>
+
 					<li>Multi-View Multi-Label Learning with View-Specific Information Extraction. <br>
 	  				<font class="coauthors" color="#606060">X. Wu, Q.-G. Chen, Y. Hu,</font> <font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, X. Chang, X. Wang, M.-L. Zhang.</font><br>
-	  				<font class="conf" color="#000000">In: Proceedings of the 28th International Joint Conference on Artificial Intelligence (<font color="#3D8888">IJCAI</font>), 2019.</font> <!--[<a href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a href="paper/kdd19.pdf" target="_blank"><b>Paper</b></a>]--></li>
+	  				<font class="conf" color="#000000">In: Proceedings of the 28th International Joint Conference on Artificial Intelligence, Macao, China.</font> <!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/kdd19.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+	  				<div id="buttons">
+	  				<font color="#FDF6E4" id="button"><b>&nbsp;IJCAI 2019&nbsp;</b></font>&nbsp;
+	  				<span class="title" onclick="toggle('ijcai19_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/IJCAI'19.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+						<span class="title" onclick="toggle('ijcai19_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+						</div>
+						<br>
+						<span id="ijcai19_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							Multi-view multi-label learning serves an important framework to learn from objects with diverse representations and rich semantics. Existing multi-view multi-label learning techniques focus on exploiting shared subspace for fusing multiview representations, where helpful view-specific information for discriminative modeling is usually ignored. In this &nbsp;paper&nbsp;, a novel multi-view multi-label learning approach named SIMM is proposed which leverages shared subspace exploitation and view-specific information extraction. For shared subspace exploitation, SIMM jointly minimizes confusion adversarial loss and multi-label loss to utilize shared information from all views. For view-specific information extraction, SIMM enforces an orthogonal constraint w.r.t. the shared subspace to utilize view-specific discriminative information. Extensive experiments on real-world data sets clearly show the favorable performance of SIMM against other state-of-the-art multi-view multi-label learning approaches
+						</span>
+						<span id="ijcai19_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							@inproceedings{ijcai19jhwu,<br>
+						  author    = {Xuan Wu and Qing-Guo Chen and Yao Hu and Deng-Bao Wang and Xiaodong Chang and Xiaobo Wang and Min-Ling Zhang},<br>
+						  title     = {Multi-View Multi-Label Learning with View-Specific Information Extraction},<br>
+						  booktitle = {Proceedings of the 28th International Joint Conference on Artificial Intelligence, Macao, China},<br>
+						  pages     = {3884--3890},<br>
+						  year      = {2019}<br>
+						}
+					</span>
+					
+					</li>
+	  				<br>
+	  				</li>
 				</ul>
+
 			
-			<h1><a name="honors"></a>Honors</a></h1>
+			<h1><a target="_blank" name="honors"></a>Honors</a></h1>
 				<ul>
-					<li><p> China National Scholarship for the First-Year PhD Students &nbsp;&nbsp;2019 </p></li>
+					<li><p> China National Scholarship for First Year PhD Students &nbsp;&nbsp;2019 </p></li>
 	            	<li><p> Outstanding Graduates, Southwest University &nbsp;&nbsp;2019 </p></li>
 	                <li><p> China National Scholarship &nbsp;&nbsp;2018 </p></li>
 	                <li><p> Merit Student Award, Southwest University &nbsp;&nbsp;2018 </p></li>
 	                <li><p> First Class Academic  Scholarship, Southwest University &nbsp;&nbsp;2016, 2017, 2018 </p></li>
 	            </ul>
-            <h1><a name="services"></a>Academic Services</a></h1>
+            <h1><a target="_blank" name="services"></a>Academic Services</a></h1>
 				<ul>
-					<li><p>PC Member for AAAI (2021, 2022), ACML (2021)</p></li>
-					<li><p>Journal Reviewer for IEEE Transactions on Multimedia, Neurocomputing</p></li>
+					<li><p>PC Member for AAAI (2021, 2022), ACML (2021), ICMLA (2021), IAAI (2021, 2022).</p></li>
+					<li><p>Invited Journal Reviewer for IEEE Trans. Multimedia, Neurocomputing.</p></li>
+					<li><p>Subreviewer for some international journals and conferences such as TPAMI, MLJ, TKDE, NeurIPS, ICML, AAAI, IJCAI, KDD, etc.</p></li>
 	            </ul>
 		</div>
  	</body></html>
