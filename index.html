@@ -73,8 +73,62 @@
 	                <!--<li><p>Applications of AI on Computer Vision and Natural Language Processing</p></li>-->
 	            </ul>
 
-			<h1><a target="_blank" name="publications"></a>Publications</h1>
+			<h1><a target="_blank" name="publications"></a>Publications <font class="equal">(</font>&dagger;<font class="equal">Equal Contribution)</font></h1>
 	  			<ul id="pub">
+	  				<li>
+	  					Revisiting Consistency Regularization for Deep Partial Label Learning.<br>
+		  				<font class="coauthors" color="#606060">D.-D. Wu&dagger;</font>, <font class="me">D.-B. Wang&dagger;</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
+		  				<font class="conf" color="#000000">In: Proceedings of the 39th International Conference on Machine Learning.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<div id="buttons">
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;ICML 2022&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle('icml22_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle('icml22_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							</div>
+							<br>
+							<span id="icml22_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							Partial label learning (PLL), which refers to the classification task where each training instance is ambiguously annotated with a set of candidate labels, has been recently studied in deep learning paradigm. Despite advances in recent deep PLL literature, existing methods (e.g., methods based on self-training or contrastive learning) are confronted with either ineffectiveness or inefficiency. In this paper, we revisit a simple idea namely consistency regularization, which has been shown effective in traditional PLL literature, to guide the training of deep models. Towards this goal, a new regularized training framework, which performs supervised learning on non-candidate labels and employs consistency regularization on candidate labels, is proposed for PLL. We instantiate the regularization term by matching the outputs of multiple augmentations of an instance to a conformal label distribution, which can be adaptively inferred by the closed-form solution. Experiments on benchmark datasets demonstrate the superiority of the proposed method compared with other state-of-the-art methods.
+							</span>
+							<span id="icml22_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+								@inproceedings{ICML22ddwu,<br>
+							  author    = {Dong-Dong Wu and  Deng-Bao Wang and Min-Ling Zhang},<br>
+							  title     = {Revisiting Consistency Regularization for Deep Partial Label Learning},<br>
+							  booktitle = {Proceedings of the 39th International Conference on Machine Learning, Virtual Conference},<br>
+							  year      = {2022}<br>
+							}
+							</span>
+		  				
+	  				</li>
+	  				<br>
+	  				<li>
+	  					Adaptive Graph Guided Disambiguation for Partial Label Learning.<br>
+		  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, M.-L. Zhang, L. Li.</font><br>
+		  				<font class="conf" color="#000000">IEEE Transactions on Pattern Analysis and Machine Intelligence, in press.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<div id="buttons">
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;IEEE TPAMI&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle('tpami22_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle('tpami22_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							</div>
+							<br>
+							<span id="tpami22_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							In partial label learning, a multi-class classifier is learned from the ambiguous supervision where each training example is associated with a set of candidate labels among which only one is valid. An intuitive way to deal with this problem is label disambiguation, i.e. differentiating the labeling confidences of different candidate labels so as to try to recover ground-truth labeling information. Recently, feature-aware label disambiguation has been proposed which utilizes the graph structure of feature space to generate labeling confidences over candidate labels. Nevertheless, the existence of noises and outliers in training data makes the graph structure derived from original feature space less reliable. In this paper, a novel partial label learning approach based on adaptive graph guided disambiguation is proposed, which is shown to be more effective in revealing the intrinsic manifold structure among training examples. Other than the sequential disambiguation-then-induction learning strategy, the proposed approach jointly performs adaptive graph construction, candidate label disambiguation and predictive model induction with alternating optimization. Furthermore, we consider the particular human-in-the-loop framework in which a learner is allowed to actively query some ambiguously labeled examples for manual disambiguation. Extensive experiments clearly validate the effectiveness of adaptive graph guided disambiguation for learning from partial label examples.
+							</span>
+							<span id="tpami22_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+								@inproceedings{tpami22dbwang,<br>
+							  author    = {Deng-Bao Wang and Li Li and Min-Ling Zhang},<br>
+						  	title     = {Adaptive Graph Guided Disambiguation for Partial Label Learning},<br>
+							  booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence, in press},<br>
+							  year      = {2022}<br>
+							}
+							</span>
+		  				
+	  				</li>
+	  				<br>
 	  				<li>
 	  					Rethinking Calibration of Deep Neural Networks: Don't Be Afraid of Overconfidence.<br>
 		  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, L. Feng, M.-L. Zhang.</font><br>
@@ -82,9 +136,9 @@
 		  				<div id="buttons">
 		  				<font color="#FDF6E4" id="button"><b>&nbsp;NeurIPS 2021&nbsp;</b></font>&nbsp;
 		  				<span class="title" onclick="toggle('nips21_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="https://openreview.net/forum?id=NJS8kp15zzH">&nbsp;Paper&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Appendix&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://proceedings.neurips.cc/paper/2021/file/61f3a6dbc9120ea78ef75544826c814e-Paper.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://proceedings.neurips.cc/paper/2021/file/61f3a6dbc9120ea78ef75544826c814e-Supplemental.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/Rethinking-Calibration-of-Deep-Neural-Networks">&nbsp;Code&nbsp;</a></font>&nbsp;
 							<span class="title" onclick="toggle('nips21_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
@@ -214,17 +268,18 @@
 			
 			<h1><a target="_blank" name="honors"></a>Honors</a></h1>
 				<ul>
-					<li><p> China National Scholarship for First Year PhD Students &nbsp;&nbsp;2019 </p></li>
-	            	<li><p> Outstanding Graduates, Southwest University &nbsp;&nbsp;2019 </p></li>
-	                <li><p> China National Scholarship &nbsp;&nbsp;2018 </p></li>
-	                <li><p> Merit Student Award, Southwest University &nbsp;&nbsp;2018 </p></li>
-	                <li><p> First Class Academic  Scholarship, Southwest University &nbsp;&nbsp;2016, 2017, 2018 </p></li>
-	            </ul>
-            <h1><a target="_blank" name="services"></a>Academic Services</a></h1>
+						<li><p> Tencent Rhino-Bird Elite Training Program, Tencent&nbsp;&nbsp;2022 </p></li>
+						<li><p> National Scholarship for First-Year PhD Students &nbsp;&nbsp;2019 </p></li>
+           	<li><p> Outstanding Graduates, Southwest University &nbsp;&nbsp;2019 </p></li>
+            <li><p> National Scholarship &nbsp;&nbsp;2018 </p></li>
+            <li><p> Merit Student Award, Southwest University &nbsp;&nbsp;2018 </p></li>
+            <li><p> First Class Academic  Scholarship, Southwest University &nbsp;&nbsp;2016, 2017, 2018 </p></li>
+            </ul>
+          <h1><a target="_blank" name="services"></a>Academic Services</a></h1>
 				<ul>
-					<li><p>PC Member for AAAI (2021, 2022), ACML (2021), ICMLA (2021), IAAI (2021, 2022).</p></li>
-					<li><p>Invited Journal Reviewer for IEEE Trans. Multimedia, Neurocomputing.</p></li>
-					<li><p>Subreviewer for some international journals and conferences such as TPAMI, MLJ, TKDE, NeurIPS, ICML, AAAI, IJCAI, KDD, etc.</p></li>
-	            </ul>
+					<li><p>PC Member for ICML (2022), IJCAI(2022), AAAI (2022, 2021), ECML/PKDD (2022), ACML (2021), ICMLA (2021), IAAI (2022, 2021).</p></li>
+					<li><p>Invited Journal Reviewer for IEEE TPAMI, ACM TIST, ACM TKDD, IEEE TMM, JCST, Neurocomputing.</p></li>
+					<!--<li><p>Subreviewer for some international journals and conferences such as MLJ, TKDE, NeurIPS, ICML, AAAI, IJCAI, KDD, etc.</p></li>
+	            </ul>-->
 		</div>
  	</body></html>
