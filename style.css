@@ -144,11 +144,10 @@ body {
 #content {
 	width: 58em;
 	background-color:#FDF6E4;
-	margin-top:10px;
 	padding:10px 30px 5px 30px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 20px;
 	text-align: left;
 	border-radius: 1px 1px 1px 1px;
@@ -166,6 +165,13 @@ body {
 	border-style: solid;
 	border-width: 0 0 1px 0;
 	border-bottom: 0px dashed #fff;
+	font-family: 'Calibri','Verdana'; /*'Candara',*/
+}
+
+#content .equal {
+	color: #444;
+	font-size: 0.9em;
+	font-weight: 500;
 	font-family: 'Calibri','Verdana'; /*'Candara',*/
 }
 
