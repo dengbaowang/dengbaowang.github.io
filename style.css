@@ -65,7 +65,7 @@ body {
 	background-color: #FDF6E4;
 	height: 11.9em;
 	/*padding-top: 1em;*/
-	width: 45%;
+	width: 66em;
 	margin: 0 auto;
 	text-align: left;
 	border-radius: 1px 1px 1px 1px;
@@ -142,7 +142,7 @@ body {
 
 
 #content {
-	width: 45%;
+	width: 66em;
 	background-color:#FDF6E4;
 	padding:10px 30px 5px 30px;
 	margin-left: auto;
