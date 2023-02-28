@@ -105,21 +105,21 @@
 	  				<br>
 	  				<li>
 	  					Partial-Label Regression.<br>
-		  				<font class="coauthors" color="#606060">X. Cheng</font>, <font class="me">D.-B. Wang</font>, <font class="coauthors" color="#606060">L. Feng</font><font class="coauthors" color="#606060">, M.-L. Zhang</font<font class="coauthors" color="#606060">, B. An.</font><br>
+		  				<font class="coauthors" color="#606060">X. Cheng</font>, <font class="me">D.-B. Wang</font>, <font class="coauthors" color="#606060">L. Feng</font><font class="coauthors" color="#606060">, M.-L. Zhang, B. An.</font><br>
 		  				<font class="conf" color="#000000">In: Proceedings of the 39th International Conference on Machine Learning.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
 		  				<font color="#FDF6E4" id="button"><b>&nbsp;AAAI 2023&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle('aaai23_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Paper&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Appendix&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle('aaae23_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;aaai23_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/AAAI'23b.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/Appendix_AAAI'23b.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+							<!--<font id="button1" color="#204E9A"><a target="_blank" href="https://dengbaowang.github.io/">&nbsp;Code&nbsp;</a></font>&nbsp;-->
+							<span class="title" onclick="toggle(&#39;aaai23_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
 							<span id="aaai23_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
 							Partial-label learning is a popular weakly supervised learning setting that allows each training example to be annotated with a set of candidate labels. Previous studies on partial-label learning only focused on the classification setting where candidate labels are all discrete, which cannot handle continuous labels with real values. In this paper, we provide the first attempt to investigate partial-label regression, where each training example is annotated with a set of real-valued candidate labels. To solve this problem, we first propose a simple baseline method that takes the average loss incurred by candidate labels as the predictive loss. The drawback of this method lies in that the loss incurred by the true label may be overwhelmed by other false labels. To overcome this drawback, we propose an identification method that takes the least loss incurred by candidate labels as the predictive loss. We further improve it by proposing a progressive identification method to differentiate candidate labels using progressively updated weights for incurred losses. We prove that the latter two methods are model-consistent and provide convergence analysis showing the optimal parametric convergence rate. Our proposed methods are theoretically grounded and can be compatible with any models, optimizers, and losses. Experiments validate the effectiveness of our proposed methods.
 							</span>
-							<span id="aaae23_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							<span id="aaai23_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
 								@inproceedings{AAAI23Cheng,<br>
 							  author    = {Xin Cheng, Deng-Bao Wang, Lei Feng, Min-Ling Zhang and Bo An},<br>
 							  title     = {Partial-Label Regression},<br>
@@ -132,15 +132,14 @@
 	  				<br>
 	  				<li>
 	  					Revisiting Consistency Regularization for Deep Partial Label Learning.<br>
-		  				<font class="coauthors" color="#606060">D.-D. Wu&dagger;</font>, <font class="me">D.-B. Wang&dagger;</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
+		  				<font class="coauthors" color="#606060">D.-D. Wu†</font>, <font class="me">D.-B. Wang†</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
 		  				<font class="conf" color="#000000">In: Proceedings of the 39th International Conference on Machine Learning.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
 		  				<font color="#FDF6E4" id="button"><b>&nbsp;ICML 2022&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle('icml22_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Paper&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Appendix&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle('icml22_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;icml22_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/ICML'22a.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/Resources.htm#icml22a">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle(&#39;icml22_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
 							<span id="icml22_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
@@ -163,11 +162,11 @@
 		  				<font class="conf" color="#000000">IEEE Transactions on Pattern Analysis and Machine Intelligence.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
 		  				<font color="#FDF6E4" id="button"><b>&nbsp;TPAMI 2022&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle('tpami22_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Paper&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Appendix&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle('tpami22_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;tpami22_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TPAMI'21b.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TPAMI'21b-Supplement.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/PL-AGGD">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle(&#39;tpami22_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
 							<span id="tpami22_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
@@ -190,11 +189,10 @@
 		  				<font class="conf" color="#000000">Machine Learning Journal.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
 		  				<font color="#FDF6E4" id="button"><b>&nbsp;Mach Learn 2022&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle('ml22_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Paper&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Appendix&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle('ml22_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;ml22_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://dengbaowang.github.io/">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://dengbaowang.github.io/">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle(&#39;ml22_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
 							<span id="ml22_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
@@ -217,11 +215,11 @@
 		  				<font class="conf" color="#000000">In: Advances in Neural Information Processing Systems, Virtual Conference.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
 		  				<font color="#FDF6E4" id="button"><b>&nbsp;NeurIPS 2021&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle('nips21_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;nips21_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
 							<font id="button1" color="#204E9A"><a target="_blank" href="https://proceedings.neurips.cc/paper/2021/file/61f3a6dbc9120ea78ef75544826c814e-Paper.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
 							<font id="button1" color="#204E9A"><a target="_blank" href="https://proceedings.neurips.cc/paper/2021/file/61f3a6dbc9120ea78ef75544826c814e-Supplemental.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
 							<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/Rethinking-Calibration-of-Deep-Neural-Networks">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle('nips21_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							<span class="title" onclick="toggle(&#39;nips21_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
 							<span id="nips21_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
@@ -245,10 +243,10 @@
 		  				<font class="conf" color="#000000">In: Proceedings of the 30th International Joint Conference on Artificial Intelligence, Virtual Conference.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
 		  				<font color="#FDF6E4" id="button"><b>&nbsp;IJCAI 2021&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle('ijcai21_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/IJCAI'21a.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;ijcai21_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/IJCAI&#39;21a.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
 							<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/CLL_POCR">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle('ijcai21_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							<span class="title" onclick="toggle(&#39;ijcai21_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
 							<span id="ijcai21_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
@@ -270,11 +268,11 @@
 	  				<font class="conf" color="#000000">In: Proceedings of the 35th AAAI Conference on Artificial Intelligence, Virtual Conference.</font> <!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/kdd19.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 	  				<div id="buttons">
 	  				<font color="#FDF6E4" id="button"><b>&nbsp;AAAI 2021&nbsp;</b></font>&nbsp;
-	  				<span class="title" onclick="toggle('aaai21_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/AAAI'21a.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+	  				<span class="title" onclick="toggle(&#39;aaai21_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/AAAI&#39;21a.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
 						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/CompLossSupplement.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
 						<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/CompLossForNoisyLabels">&nbsp;Code&nbsp;</a></font>&nbsp;
-						<span class="title" onclick="toggle('aaai21_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+						<span class="title" onclick="toggle(&#39;aaai21_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 						</div>
 						<br>
 						<span id="aaai21_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
@@ -298,10 +296,10 @@
 	  				<font class="conf" color="#000000">In: Proceedings of the 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Anchorage, AK, USA.</font> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/kdd19.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 	  				<div id="buttons">
 	  				<font color="#FDF6E4" id="button"><b>&nbsp;KDD 2019&nbsp;</b></font>&nbsp;
-	  				<span class="title" onclick="toggle('kdd19_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/KDD'19b.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+	  				<span class="title" onclick="toggle(&#39;kdd19_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/KDD&#39;19b.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
 						<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/PL-AGGD">&nbsp;Code&nbsp;</a></font>&nbsp;
-						<span class="title" onclick="toggle('kdd19_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+						<span class="title" onclick="toggle(&#39;kdd19_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 						</div>
 						<br>
 						<span id="kdd19_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
@@ -324,9 +322,9 @@
 	  				<font class="conf" color="#000000">In: Proceedings of the 28th International Joint Conference on Artificial Intelligence, Macao, China.</font> <!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/kdd19.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 	  				<div id="buttons">
 	  				<font color="#FDF6E4" id="button"><b>&nbsp;IJCAI 2019&nbsp;</b></font>&nbsp;
-	  				<span class="title" onclick="toggle('ijcai19_abs')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/IJCAI'19.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
-						<span class="title" onclick="toggle('ijcai19_bib')" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+	  				<span class="title" onclick="toggle(&#39;ijcai19_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+						<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/IJCAI&#39;19.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+						<span class="title" onclick="toggle(&#39;ijcai19_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 						</div>
 						<br>
 						<span id="ijcai19_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
