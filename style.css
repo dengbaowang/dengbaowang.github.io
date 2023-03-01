@@ -61,7 +61,7 @@ a #google-scholar {
 
 body {
 	font-family: 'Calibri','Verdana'; /*'Candara',*/
-	font-size: 85%; 
+	font-size: 88%; 
 	text-align: center;
 	background-color: #50585F;
 	padding-top: 8px;
@@ -74,7 +74,7 @@ body {
 	background-color: #FDF6E4;
 	height: 13.4em;
 	/*padding-top: 1em;*/
-	width: 64em;
+	width: 63em;
 	margin: 0 auto;
 	text-align: left;
 	border-radius: 1px 1px 1px 1px;
@@ -83,10 +83,10 @@ body {
 #header h1 { 	
 	margin: 0;
 	color: #444;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-family: 'Calibri','Verdana'; /*'Candara',*/
-	margin-top: 0.3em;
-	margin-bottom: 0.1em;
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
 	font-weight: normal;
 	cursor: default;
 	vertical-align:top;
@@ -103,8 +103,8 @@ body {
 
 #header p {
 	font-size: 1em;
-	margin-top: 0.5em;
-	margin-bottom: 0.8em;
+	margin-top: 0.3em;
+	margin-bottom: 0.5em;
 	/*color: #3D3E40;*/
 }
 
@@ -113,7 +113,7 @@ body {
 	position: relative;
 	clear:left;
 	float: left;
-	margin: 0em 1em 0 0;
+	margin: 0em 0em 0 -1em;
 	padding: 0 0 0 0 ;
 	height: 95%;
 }	
@@ -154,7 +154,7 @@ body {
 
 
 #content {
-	width: 64em;
+	width: 63em;
 	background-color:#FDF6E4;
 	padding:10px 30px 5px 30px;
 	margin-left: auto;
