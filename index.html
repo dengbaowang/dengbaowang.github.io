@@ -77,26 +77,27 @@
 			<h1><a target="_blank" name="publications"></a>Publications <font class="equal">(&dagger;Equal Contribution)</font></h1>
 	  			<ul id="pub">
 	  				<li>
-	  					Learning from Noisy Labels via Dynamic Loss Thresholding.<br>
-		  				<font class="coauthors" color="#606060">H. Yang</font>, <font class="coauthors" color="#606060">Y.-Z. Jin</font>, <font class="coauthors" color="#606060">Z.-Y. Li</font>, <font class="me">D.-B. Wang</font>, <font class="coauthors" color="#606060">X. Geng</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
-		  				<font class="conf" color="#000000">IEEE Transactions on Knowledge and Data Engineering.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+	  					Distilling Reliable Knowledge for Instance-Dependent Partial Label Learning.<br>
+		  				<font class="coauthors" color="#606060">D.-D. Wu†</font>, <font class="me">D.-B. Wang†</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
+		  				<font class="conf" color="#000000">In: Proceedings of the 38th AAAI Conference on Artificial Intelligence, Vancouver, Canada.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
-		  				<font color="#FDF6E4" id="button"><b>&nbsp;TKDE 2023&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle(&#39;tkde23_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TKDE'23.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
-							<font id="button1_tbu"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/DLT.rar">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle(&#39;cvpr23_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;AAAI 2024&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;cvpr24_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://palm.seu.edu.cn/zhangml/files/AAAI'24d.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://palm.seu.edu.cn/zhangml/files/Appendix_AAAI'24d.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+							<font id="button1_tbu"><a target="_blank" href="https://github.com/wu-dd/DIRK">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle(&#39;cvpr24_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
 							</div>
 							<br>
-							<span id="tkde23_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
-							Numerous researches have proved that deep neural networks (DNNs) can fit almost everything even given data with noisy labels, and result in poor generalization performance. However, recent studies suggest that DNNs tend to gradually memorize the data, moving from correct data to mislabeled data. Inspired by this finding, we propose a novel method named Dynamic Loss Thresholding (DLT). During the training process, DLT records the loss value of each sample and calculates dynamic loss thresholds. Specifically, DLT compares the loss value of each sample with the current loss threshold. Samples with smaller losses can be considered as clean samples with higher probability and vice versa. Then, DLT discards the potentially corrupted labels and further leverages self-training semi-supervised learning techniques. Experiments on CIFAR-10/100, WebVision and Clothing1M demonstrate substantial improvements over recent state-of-the-art methods. In addition, we investigate two real-world problems. Firstly, we propose a novel approach to estimate the noise rates of datasets based on the loss difference between the early and late training stages of DNNs. Secondly, we explore the effect of hard samples (which are difficult to be distinguished) on the process of learning from noisy labels.
+							<span id="cvpr24_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							Partial label learning (PLL) refers to the classification task where each training instance is ambiguously annotated with a set of candidate labels. Despite substantial advancements in tackling this challenge, limited attention has been devoted to a more specific and realistic setting, denoted as instancedependent partial label learning (IDPLL). Within this contex, the assignment of partial labels depends on the distinct features of individual instances, rather than being random. In this paper, we initiate an exploration into a self-distillation framework for this problem, driven by the proven effectiveness and stability of this framework. Nonetheless, a crucial shortfall is identified: the foundational assumption central to IDPLL, involving what we term as partial label knowledge stipulating that candidate labels should exhibit superior confidence compared to non-candidates, is not fully upheld within the distillation process. To address this challenge, we introduce DIRK, a novel distillation approach that leverages a rectification process to DIstill Reliable Knowledge, while concurrently preserves informative fine-grained label confidence. In addition, to harness the rectified confidence to its fullest potential, we propose a knowledge-based representation refinement module, seamlessly integrated into the DIRK framework. This module effectively transmits the essence of similarity knowledge from the label space to the feature space, thereby amplifying representation learning and subsequently engendering marked improvements in model performance. Experiments and analysis on multiple datasets validate the rationality and superiority of our proposed approach.
 							</span>
-							<span id="cvpr23_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
-								@inproceedings{TKDE23Yang,<br>
-							  author    = {Hao Yang, You-Zhi Jin, Zi-Yin Li, Deng-Bao Wang, Xin Geng, Min-Ling Zhang},<br>
-							  title     = {Learning from Noisy Labels via Dynamic Loss Thresholding},<br>
-							  booktitle = {IEEE Transactions on Knowledge and Data Engineering},<br>
-							  year      = {2023}<br>
+							<span id="cvpr24_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+								@inproceedings{AAAI24Wu,<br>
+							  author    = {Dong-Dong Wu and  Deng-Bao Wang and Min-Ling Zhang},<br>
+							  title     = {Distilling Reliable Knowledge for Instance-Dependent Partial Label Learning},<br>
+							  booktitle = {Proceedings of the 38th AAAI Conference on Artificial Intelligence},<br>
+							  year      = {2024}<br>
 							}
 							</span>
 		  				
@@ -123,6 +124,52 @@
 							  author    = {Deng-Bao Wang, Lanqing Li, Peilin Zhao, Pheng-Ann Heng, Min-Ling Zhang},<br>
 							  title     = {On the Pitfall of Mixup for Uncertainty Calibration},<br>
 							  booktitle = {Proceedings of the 34th IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>
+							  year      = {2023}<br>
+							}
+							</span>
+		  				
+	  				</li>
+	  				<br>
+	  				<li>
+	  					Multiple-instance learning from triplet comparison bags.<br>
+		  				<font class="coauthors" color="#606060">S. Shu</font>, <font class="me">D.-B. Wang</font>, <font class="coauthors" color="#606060">S. Yuan</font>, <font class="coauthors" color="#606060">H. Wei</font>, <font class="coauthors" color="#606060">J. Jiang</font>, <font class="coauthors" color="#606060">L. Feng</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
+		  				<font class="conf" color="#000000">ACM Transactions on Knowledge Discovery from Data, 2023.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<div id="buttons">
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;ACM TKDD 2023&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;tkdd23_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://palm.seu.edu.cn/zhangml/files/TKDD'23.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1_tbu"><a target="_blank" href="https://palm.seu.edu.cn/zhangml/files/MILTC.zip">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle(&#39;tkdd23_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							</div>
+							<br>
+							<span id="tkdd23_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							Multiple-instance learning (MIL) solves the problem where training instances are grouped in bags, and a binary (positive or negative) label is provided for each bag. Most of the existing MIL studies need fully labeled bags for training an effective classifier, while it could be quite hard to collect such data in many real-world scenarios, due to the high cost of data labeling process. Fortunately, unlike fully labeled data, triplet comparison data can be collected in a more accurate and human-friendly way. Therefore, in this paper, we for the first time investigate MIL from only triplet comparison bags, where a triplet (𝑋𝑎, 𝑋𝑏, 𝑋𝑐 ) contains the weak supervision information that bag 𝑋𝑎 is more similar to 𝑋𝑏 than to 𝑋𝑐 . To solve this problem, we propose to train a bag-level classifier by the empirical risk minimization framework and theoretically provide a generalization error bound. We also show that a convex formulation can be obtained only when specific convex binary losses such as the square loss and the double hinge loss are used. Extensive experiments validate that our proposed method significantly outperforms other baselines
+							</span>
+							<span id="tkdd23_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							</span>
+		  				
+	  				</li>
+	  				<br>
+	  				<li>
+	  					Learning from Noisy Labels via Dynamic Loss Thresholding.<br>
+		  				<font class="coauthors" color="#606060">H. Yang</font>, <font class="coauthors" color="#606060">Y.-Z. Jin</font>, <font class="coauthors" color="#606060">Z.-Y. Li</font>, <font class="me">D.-B. Wang</font>, <font class="coauthors" color="#606060">X. Geng</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
+		  				<font class="conf" color="#000000">IEEE Transactions on Knowledge and Data Engineering, 2023.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<div id="buttons">
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;IEEE TKDE 2023&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;tkde23_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TKDE'23.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1_tbu"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/DLT.rar">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle(&#39;cvpr23_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							</div>
+							<br>
+							<span id="tkde23_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							Numerous researches have proved that deep neural networks (DNNs) can fit almost everything even given data with noisy labels, and result in poor generalization performance. However, recent studies suggest that DNNs tend to gradually memorize the data, moving from correct data to mislabeled data. Inspired by this finding, we propose a novel method named Dynamic Loss Thresholding (DLT). During the training process, DLT records the loss value of each sample and calculates dynamic loss thresholds. Specifically, DLT compares the loss value of each sample with the current loss threshold. Samples with smaller losses can be considered as clean samples with higher probability and vice versa. Then, DLT discards the potentially corrupted labels and further leverages self-training semi-supervised learning techniques. Experiments on CIFAR-10/100, WebVision and Clothing1M demonstrate substantial improvements over recent state-of-the-art methods. In addition, we investigate two real-world problems. Firstly, we propose a novel approach to estimate the noise rates of datasets based on the loss difference between the early and late training stages of DNNs. Secondly, we explore the effect of hard samples (which are difficult to be distinguished) on the process of learning from noisy labels.
+							</span>
+							<span id="cvpr23_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+								@inproceedings{TKDE23Yang,<br>
+							  author    = {Hao Yang, You-Zhi Jin, Zi-Yin Li, Deng-Bao Wang, Xin Geng, Min-Ling Zhang},<br>
+							  title     = {Learning from Noisy Labels via Dynamic Loss Thresholding},<br>
+							  booktitle = {IEEE Transactions on Knowledge and Data Engineering},<br>
 							  year      = {2023}<br>
 							}
 							</span>
@@ -157,6 +204,33 @@
 	  				</li>
 	  				<br>
 	  				<li>
+	  					Adaptive Graph Guided Disambiguation for Partial Label Learning.<br>
+		  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, M.-L. Zhang, L. Li.</font><br>
+		  				<font class="conf" color="#000000">IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<div id="buttons">
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;IEEE TPAMI&nbsp;</b></font>&nbsp;
+		  				<span class="title" onclick="toggle(&#39;tpami22_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TPAMI'21b.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TPAMI'21b-Supplement.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
+							<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/PL-AGGD">&nbsp;Code&nbsp;</a></font>&nbsp;
+							<span class="title" onclick="toggle(&#39;tpami22_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
+							</div>
+							<br>
+							<span id="tpami22_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+							In partial label learning, a multi-class classifier is learned from the ambiguous supervision where each training example is associated with a set of candidate labels among which only one is valid. An intuitive way to deal with this problem is label disambiguation, i.e. differentiating the labeling confidences of different candidate labels so as to try to recover ground-truth labeling information. Recently, feature-aware label disambiguation has been proposed which utilizes the graph structure of feature space to generate labeling confidences over candidate labels. Nevertheless, the existence of noises and outliers in training data makes the graph structure derived from original feature space less reliable. In this paper, a novel partial label learning approach based on adaptive graph guided disambiguation is proposed, which is shown to be more effective in revealing the intrinsic manifold structure among training examples. Other than the sequential disambiguation-then-induction learning strategy, the proposed approach jointly performs adaptive graph construction, candidate label disambiguation and predictive model induction with alternating optimization. Furthermore, we consider the particular human-in-the-loop framework in which a learner is allowed to actively query some ambiguously labeled examples for manual disambiguation. Extensive experiments clearly validate the effectiveness of adaptive graph guided disambiguation for learning from partial label examples.
+							</span>
+							<span id="tpami22_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
+								@inproceedings{tpami22dbwang,<br>
+							  author    = {Deng-Bao Wang and Li Li and Min-Ling Zhang},<br>
+						  	title     = {Adaptive Graph Guided Disambiguation for Partial Label Learning},<br>
+							  booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence, in press},<br>
+							  year      = {2022}<br>
+							}
+							</span>
+		  				
+	  				</li>
+	  				<br>
+	  				<li>
 	  					Revisiting Consistency Regularization for Deep Partial Label Learning.<br>
 		  				<font class="coauthors" color="#606060">D.-D. Wu†</font>, <font class="me">D.-B. Wang†</font><font class="coauthors" color="#606060">, M.-L. Zhang.</font><br>
 		  				<font class="conf" color="#000000">In: Proceedings of the 39th International Conference on Machine Learning, Baltimore, MD USA.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
@@ -183,38 +257,11 @@
 	  				</li>
 	  				<br>
 	  				<li>
-	  					Adaptive Graph Guided Disambiguation for Partial Label Learning.<br>
-		  				<font class="me">D.-B. Wang</font><font class="coauthors" color="#606060">, M.-L. Zhang, L. Li.</font><br>
-		  				<font class="conf" color="#000000">IEEE Transactions on Pattern Analysis and Machine Intelligence.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
-		  				<div id="buttons">
-		  				<font color="#FDF6E4" id="button"><b>&nbsp;TPAMI 2022&nbsp;</b></font>&nbsp;
-		  				<span class="title" onclick="toggle(&#39;tpami22_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TPAMI'21b.pdf">&nbsp;Paper&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="http://palm.seu.edu.cn/zhangml/files/TPAMI'21b-Supplement.pdf">&nbsp;Appendix&nbsp;</a></font>&nbsp;
-							<font id="button1" color="#204E9A"><a target="_blank" href="https://github.com/dengbaowang/PL-AGGD">&nbsp;Code&nbsp;</a></font>&nbsp;
-							<span class="title" onclick="toggle(&#39;tpami22_bib&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Bibtex&nbsp;</font></span>&nbsp;
-							</div>
-							<br>
-							<span id="tpami22_abs" style="text-align:justify; display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
-							In partial label learning, a multi-class classifier is learned from the ambiguous supervision where each training example is associated with a set of candidate labels among which only one is valid. An intuitive way to deal with this problem is label disambiguation, i.e. differentiating the labeling confidences of different candidate labels so as to try to recover ground-truth labeling information. Recently, feature-aware label disambiguation has been proposed which utilizes the graph structure of feature space to generate labeling confidences over candidate labels. Nevertheless, the existence of noises and outliers in training data makes the graph structure derived from original feature space less reliable. In this paper, a novel partial label learning approach based on adaptive graph guided disambiguation is proposed, which is shown to be more effective in revealing the intrinsic manifold structure among training examples. Other than the sequential disambiguation-then-induction learning strategy, the proposed approach jointly performs adaptive graph construction, candidate label disambiguation and predictive model induction with alternating optimization. Furthermore, we consider the particular human-in-the-loop framework in which a learner is allowed to actively query some ambiguously labeled examples for manual disambiguation. Extensive experiments clearly validate the effectiveness of adaptive graph guided disambiguation for learning from partial label examples.
-							</span>
-							<span id="tpami22_bib" style="display:none; margin-top: 8px; border:0pt solid; border-color: #7C7C86; border-radius: 3px 3px 3px 3px; padding-left: 12px; padding-top: 7px; padding-right: 12px; padding-bottom: 5px; width:85%; background-color:#DAD6D6">
-								@inproceedings{tpami22dbwang,<br>
-							  author    = {Deng-Bao Wang and Li Li and Min-Ling Zhang},<br>
-						  	title     = {Adaptive Graph Guided Disambiguation for Partial Label Learning},<br>
-							  booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence, in press},<br>
-							  year      = {2022}<br>
-							}
-							</span>
-		  				
-	  				</li>
-	  				<br>
-	  				<li>
 	  					Partial Label Learning with Emerging New Labels.<br>
 		  				<font class="coauthors" color="#606060">X.-R. Yu</font>, <font class="me">D.-B. Wang</font> <font class="coauthors" color="#606060">, M.-L. Zhang</font><br>
-		  				<font class="conf" color="#000000">Machine Learning Journal.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
+		  				<font class="conf" color="#000000">Machine Learning Journal, 2022.</font><!--[<a target="_blank" href="index.html"><img src="./pdf.gif">&nbsp;pdf</a>]--> <!--[<a target="_blank" href="&nbsp;paper&nbsp;/ijcai21.pdf" target="_blank"><b>&nbsp;Paper&nbsp;</b></a>]--><br>
 		  				<div id="buttons">
-		  				<font color="#FDF6E4" id="button"><b>&nbsp;Mach Learn 2022&nbsp;</b></font>&nbsp;
+		  				<font color="#FDF6E4" id="button"><b>&nbsp;Mach. Learn. 2022&nbsp;</b></font>&nbsp;
 		  				<span class="title" onclick="toggle(&#39;ml22_abs&#39;)" style="cursor:pointer; u:hover"><font id="button1" color="#204E9A">&nbsp;Abstract&nbsp;</font></span>&nbsp;
 							<font id="button1" color="#204E9A"><a target="_blank" href="https://dengbaowang.github.io/">&nbsp;Paper&nbsp;</a></font>&nbsp;
 							<font id="button1" color="#204E9A"><a target="_blank" href="https://dengbaowang.github.io/">&nbsp;Code&nbsp;</a></font>&nbsp;
@@ -386,6 +433,7 @@
 			
 			<h1><a target="_blank" name="honors"></a>Honors</a></h1>
 				<ul>
+		            <li><p> <a target="_blank" href="https://www.daad.de/en/the-daad/postdocnet/fellows/fellows/">DAAD AInet Fellow &nbsp;&nbsp;2023</a> </p></li>
 		            <li><p> National Scholarship &nbsp;&nbsp;2022 </p></li>
 		            <li><p> Merit Student Award, Southeast University &nbsp;&nbsp;2022 </p></li>
 							<li><p> Tencent Rhino-Bird Elite Training Program&nbsp;&nbsp;2022 </p></li>
