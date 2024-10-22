@@ -64,7 +64,7 @@
 }
 
 a {
-  color: #1772d0;
+  color: #1762d0;
   text-decoration: none;
 }
 
@@ -74,12 +74,17 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+body {
+  font-size: 14px;
+  background-color: #50585F;
+}
+
 td,
 th,
 tr,
 p,
 a {
+  background-color: #FDF6E4;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -93,35 +98,22 @@ h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
+  color: #182848;
 }
 
 .name {
-  padding-top: 20px;
+  padding-top: 10px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  font-size: 20px;
 }
 
 .fade {
